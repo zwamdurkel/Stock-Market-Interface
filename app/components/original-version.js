@@ -142,7 +142,13 @@ export function OriginalVersion({ currPrice, onRangeChange, orderType }) {
                   max={orderType === 'buy' ? stopLimit[0] : Infinity}
                   onChange={(e) => {
                     setStopLimit([stopLimit[0], e.target.value]);
-                    doStopLimit();
+                    if (stopLimit[0] > e.target.value) {
+                      onRangeChange([e.target.value, stopLimit[0]]);
+                    }
+
+                    if (stopLimit[0] < e.target.value) {
+                      onRangeChange([stopLimit[0], e.target.value]);
+                    }
                   }}
                 />
               </>

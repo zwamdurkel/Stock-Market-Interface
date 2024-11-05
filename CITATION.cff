@@ -1,0 +1,26 @@
+# This CITATION.cff file was generated with cffinit.
+# Visit https://bit.ly/cffinit to generate yours today!
+
+cff-version: 1.2.0
+title: Stock Market Order Form Alternative Designs
+message: >-
+  If you use this software, please cite it using the
+  metadata from this file.
+type: software
+authors:
+  - given-names: Aloys
+    family-names: Riswick
+    email: github.a@riswick.net
+repository-code: 'https://github.com/zwamdurkel/Stock-Market-Interface'
+abstract: >-
+  This repository contains three version of a stock market
+  order form. The first version uses the common "limit" and
+  "stop-loss" terminology as can be found on most brokers.
+  The second version uses a slider to specify a range. The
+  third version uses input field formatted in an inequality
+  to specify a range.
+keywords:
+  - Stock market
+  - Form
+  - Slider
+license: MIT
